@@ -12,16 +12,14 @@ export function BrandWordmarkHero() {
 }
 
 export function BrandWordmarkNav({ className = "" }) {
+  const tokenClass =
+    "font-sans text-xs font-light uppercase tracking-[0.2em] text-white sm:text-sm";
   return (
     <span
-      className={`inline-flex flex-wrap items-baseline gap-x-2 ${className}`}
+      className={`inline-flex flex-nowrap items-center gap-x-2 whitespace-nowrap ${className}`}
     >
-      <span className="font-display text-sm font-semibold uppercase tracking-[0.12em] text-brand sm:text-base">
-        Ассоциация
-      </span>
-      <span className="font-sans text-xs font-light uppercase tracking-[0.28em] text-white sm:text-sm">
-        Lounge
-      </span>
+      <span className={tokenClass}>Ассоциация</span>
+      <span className={tokenClass}>Lounge</span>
     </span>
   );
 }
