@@ -35,18 +35,18 @@ export default function EventsPage() {
             ))}
           </div>
 
-          <div className="mt-10 bg-zinc-900 rounded-3xl p-8 md:p-10 border border-white/10">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-orange-500">
+          <div className="mt-10 bg-zinc-900 rounded-3xl overflow-hidden">
+            <div className="grid md:grid-cols-2 md:items-stretch">
+              <div className="p-8 md:p-10">
+                <h2 className="text-3xl md:text-4xl font-bold text-brand">
                   VIP-комната со столом для настольных игр
                 </h2>
 
                 <div className="mt-6">
-                  <h3 className="text-2xl font-semibold text-orange-500">
+                  <h3 className="text-2xl font-semibold text-brand">
                     Игровая VIP комната
                   </h3>
-                  <ul className="mt-4 space-y-3 text-zinc-300 list-disc list-inside marker:text-orange-500">
+                  <ul className="mt-4 space-y-3 text-zinc-300 list-disc list-inside marker:text-brand">
                     <li>Профессиональный стол с суконным покрытием</li>
                     <li>Качественная и удобная мебель</li>
                     <li>Smart TV</li>
@@ -56,13 +56,14 @@ export default function EventsPage() {
                 </div>
               </div>
 
-              <div className="relative overflow-hidden rounded-2xl border border-white/10 bg-zinc-800">
+              <div className="flex w-full items-center justify-center bg-zinc-900 md:h-full md:self-stretch">
                 <Image
                   src="/vip-room.png"
                   alt="VIP-комната"
                   width={1200}
                   height={900}
-                  className="h-[320px] w-full object-cover"
+                  className="h-auto w-full max-w-full object-contain"
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   priority
                 />
               </div>

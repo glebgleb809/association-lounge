@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <Link
               href="/"
-              className="font-semibold tracking-wide text-orange-500 hover:text-orange-400 transition-colors"
+              className="font-semibold tracking-wide text-brand hover:text-brand-hover transition-colors"
             >
               Ассоциация Lounge
             </Link>
@@ -36,13 +36,13 @@ export default function RootLayout({ children }) {
             <nav className="flex items-center gap-2">
               <Link
                 href="/"
-                className="px-4 py-2 rounded-full text-sm border border-white/10 hover:border-orange-400 hover:text-orange-400 transition-colors"
+                className="px-4 py-2 rounded-full text-sm border border-white/10 hover:border-brand-hover hover:text-brand-hover transition-colors"
               >
                 Главная
               </Link>
               <Link
                 href="/events"
-                className="px-4 py-2 rounded-full text-sm border border-white/10 hover:border-orange-400 hover:text-orange-400 transition-colors"
+                className="px-4 py-2 rounded-full text-sm border border-white/10 hover:border-brand-hover hover:text-brand-hover transition-colors"
               >
                 Мероприятия
               </Link>
