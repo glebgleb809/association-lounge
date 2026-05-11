@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { BrandWordmarkHero } from "@/components/BrandWordmark";
 
 export default function Home() {
   return (
@@ -6,9 +7,7 @@ export default function Home() {
       {/* HERO */}
       <section className="min-h-screen flex items-center justify-center px-6 py-20">
         <div className="max-w-6xl w-full text-center">
-          <h1 className="text-6xl md:text-8xl font-bold mb-8">
-            Ассоциация Lounge
-          </h1>
+          <BrandWordmarkHero />
 
           <div className="flex items-center justify-center gap-3 flex-wrap">
             <a
