@@ -60,15 +60,33 @@ export default function Home() {
               </p>
 
               <p className="text-zinc-400 mb-2">
-                📞 +7 (999) 999-99-99
+                📞{" "}
+                <a
+                  href="tel:+79651171889"
+                  className="hover:text-orange-400 transition-colors"
+                >
+                  +7 965 117 18 89
+                </a>
               </p>
 
-              <a
-                href="#"
-                className="text-orange-500 hover:text-orange-400 transition-colors"
-              >
-                Instagram
-              </a>
+              <div className="flex flex-col gap-2">
+                <a
+                  href="https://www.instagram.com/association_lounge?igsh=MXh0dGplbGN4dnNoZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-orange-500 hover:text-orange-400 transition-colors"
+                >
+                  Instagram
+                </a>
+                <a
+                  href="https://t.me/AssociateLounge"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-orange-500 hover:text-orange-400 transition-colors"
+                >
+                  Telegram
+                </a>
+              </div>
             </div>
 
             <div className="bg-zinc-900 rounded-3xl p-6 text-left">
